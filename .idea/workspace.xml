@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd8b33ee-7874-4c5b-b31b-644f6592d663" name="Default Changelist" comment="update">
+    <list default="true" id="fd8b33ee-7874-4c5b-b31b-644f6592d663" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bms/static/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -35,7 +36,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yersan/Python/Frame/D-Django/Projects/CMDB" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yersan/Python/Frame/D-Django/Projects/BMS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="SvnConfiguration">
@@ -49,20 +50,30 @@
       <option name="presentableId" value="Default" />
       <updated>1594990955935</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1595757774778</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595757774778</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="867" y="187" key="CommitChangelistDialog2" timestamp="1595746328524">
+    <state x="867" y="187" key="CommitChangelistDialog2" timestamp="1595757774060">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="867" y="187" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595746328524" />
-    <state x="982" y="260" key="FileChooserDialogImpl" timestamp="1595746943968">
+    <state x="867" y="187" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595757774060" />
+    <state x="982" y="260" key="FileChooserDialogImpl" timestamp="1595758274746">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="982" y="260" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1595746943968" />
+    <state x="982" y="260" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1595758274746" />
     <state x="110" y="310" width="994" height="708" key="SettingsEditor" timestamp="1595679391529">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -6,7 +6,7 @@ from books.models import Book
 # Create your views here.
 
 def add(request):
-    if request.method=='POST':
+    if request.method == 'POST':
         title = request.POST.get("title")
         price = request.POST.get("price")
         pub_date = request.POST.get("pub_date")
@@ -22,9 +22,9 @@ def add(request):
 
 
 def books(request):
-    book_list=Book.objects.all()
+    book_list = Book.objects.all()
 
-    return render(request,'books.html',locals())
+    return render(request, 'books.html', locals())
 
 
 def delbook(request, delete_book_id):
