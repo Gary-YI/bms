@@ -2,6 +2,21 @@ from django.db import models
 
 
 # Create your models here.
+
+class Book(models.Model):
+    nid = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=32)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+    publish = models.ForeignKey(to='Publish', to_field='nid', on_delete=models.CASCADE, null=True)
+    pub_date = models.DateTimeField()
+    authors = models.ManyToManyField(to="Author")
+    objects = models.Manager()
+
+    def __str__(self):
+        return self.title
+
+
+
 class Author(models.Model):
     gender_choices = {
         ('male', '男'),
@@ -17,7 +32,6 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
-
 
 class AuthorDetail(models.Model):
     nid = models.AutoField(primary_key=True)
@@ -37,14 +51,4 @@ class Publish(models.Model):
         return self.name
 
 
-class Book(models.Model):
-    nid = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=32)
-    price = models.DecimalField(max_digits=8, decimal_places=2)
-    publish = models.ForeignKey(to='Publish', to_field='nid', on_delete=models.CASCADE, null=True)
-    pub_date = models.DateTimeField()
-    authors = models.ManyToManyField(to="Author")
-    objects = models.Manager()
 
-    def __str__(self):
-        return self.title

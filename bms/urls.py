@@ -19,9 +19,13 @@ from books import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path('add/', views.add, name='add'),
+    #书籍页面
     re_path('^$', views.books, name='books'),
+    #添加书籍
+    re_path('add/', views.add, name='add'),
+    #修改书籍
     re_path(r'edit/(\d+)', views.edit, name='edit'),
+    #删除书籍
     re_path(r'delbook/(\d+)', views.delbook, name='delbook')
 
 ]
