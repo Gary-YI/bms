@@ -13,6 +13,10 @@ class Author(models.Model):
     gender = models.CharField(choices=gender_choices, max_length=16)
     address = models.CharField(max_length=64)
     authorDetail = models.OneToOneField(to='AuthorDetail', on_delete=models.CASCADE)
+    objects=models.Manager()
+
+    def __str__(self):
+        return self.name
 
 
 class AuthorDetail(models.Model):
@@ -27,13 +31,17 @@ class Publish(models.Model):
     name = models.CharField(max_length=128)
     address = models.CharField(max_length=128)
     email = models.EmailField()
+    objects=models.Manager()
+
+    def __str__(self):
+        return self.name
 
 
 class Book(models.Model):
     nid = models.AutoField(primary_key=True)
     title = models.CharField(max_length=32)
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    publish = models.ForeignKey(to='Publish', to_field='nid', on_delete=models.CASCADE,null=True)
+    publish = models.ForeignKey(to='Publish', to_field='nid', on_delete=models.CASCADE, null=True)
     pub_date = models.DateTimeField()
     authors = models.ManyToManyField(to="Author")
     objects = models.Manager()

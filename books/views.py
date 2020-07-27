@@ -1,30 +1,22 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.urls import reverse
-from books.models import Book
+from books.models import Book, Publish, Author
 
 
 # Create your views here.
-
-def add(request):
-    if request.method == 'POST':
-        title = request.POST.get("title")
-        price = request.POST.get("price")
-        pub_date = request.POST.get("pub_date")
-        publish = request.POST.get("publish")
-        book = Book.objects.create(title=title,
-                                   price=price,
-                                   pub_date=pub_date,
-                                   publish=publish)
-        return redirect(reverse("books"))
-    else:
-
-        return render(request, 'addbook.html')
-
-
 def books(request):
     book_list = Book.objects.all()
 
     return render(request, 'books.html', locals())
+
+
+def add(request):
+    if request.method=='POST':
+
+        publish_list = Publish.objects.all()
+        author_list = Author.objects.all()
+
+    return render(request, 'addbook.html', locals())
 
 
 def delbook(request, delete_book_id):

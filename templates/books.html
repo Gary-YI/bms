@@ -22,17 +22,26 @@
                     <td>书籍价格</td>
                     <td>出版社</td>
                     <td>出版日期</td>
+                    <td>作者</td>
                     <td>操作</td>
                 </tr>
                 </thead>
                 <tbody>
                 {% for book in book_list %}
                 <tr>
-                    <td>{{ book.nid }}</td>
+                    <td>{{ forloop.counter }}</td>
                     <td>{{ book.title }}</td>
                     <td>{{ book.price }}</td>
                     <td>{{ book.publish }}</td>
                     <td>{{ book.pub_date|date:'Y-m-d' }}</td>
+                    <td>
+                        {% for author in book.authors.all %}
+                        <span>{{author.name}}</span>
+                        {% if not forloop %}
+                        ,
+                        {% endif %}
+                        {% endfor %}
+                    </td>
                     <td>
                         <a href="{% url 'edit' book.nid %}" class="btn btn-warning btn-sm">编辑</a>
                         <a href="{% url 'delbook' book.nid %}" class="btn btn-danger btn-sm">删除</a>
