@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/books/migrations" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bms/static" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/templates/book" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/templates/user" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
