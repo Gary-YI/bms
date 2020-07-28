@@ -24,8 +24,8 @@ urlpatterns = [
     #添加书籍
     re_path('add/', views.add, name='add'),
     #修改书籍
-    re_path(r'edit/(\d+)', views.edit, name='edit'),
+    re_path(r'edit/(?P<edit_book_id>\d+)/', views.edit, name='edit'),
     #删除书籍
-    re_path(r'delbook/(\d+)', views.delbook, name='delbook')
+    re_path(r'delbook/(?P<delete_book_id>\d+)/', views.delbook, name='delbook')
 
 ]
